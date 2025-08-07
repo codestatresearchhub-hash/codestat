@@ -627,7 +627,10 @@
                     <p class="small text-muted mb-1">+233 53 459 4571</p>
                   </a>
                   <a href="tel:+233 59 182 9981">
-                    <p class="small text-muted">+233 59 182 9981</p>
+                    <p class="small text-muted mb-2">+233 59 182 9981</p>
+                  </a>
+                  <a href="tel:+233 54 256 3344">
+                    <p class="small text-muted">+233 54 256 3344</p>
                   </a>
                 </div>
               </div>
@@ -642,11 +645,8 @@
                     <i class="bi bi-envelope text"></i>
                   </div>
                   <h5 class="text-primary-custom mb-2">Email</h5>
-                  <a href="mailto:info@codestat.tech">
-                    <p class="small text-muted mb-1">info@codestat.tech</p>
-                  </a>
-                  <a href="mailto:support@codestat.tech">
-                    <p class="small text-muted">support@codestat.tech</p>
+                  <a href="mailto:codestatresearchhub@gmail.com">
+                    <p class="small text-muted mb-1">codestatresearchhub@gmail.com</p>
                   </a>
                 </div>
               </div>
@@ -660,9 +660,9 @@
                       ">
                     <i class="bi bi-geo-alt"></i>
                   </div>
-                  <h5 class="text-primary-custom mb-2">Address</h5>
-                  <p class="small text-muted mb-1">Oforikrom Emec</p>
-                  <p class="small text-muted">Kumasi, Ghana</p>
+                  <h5 class="text-primary-custom mb-2">Work Location</h5>
+                  <p class="small text-muted mb-1">Fully Remote</p>
+                  <p class="small text-muted">Based in Kumasi, Ghana</p>
                 </div>
               </div>
             </div>
@@ -679,7 +679,7 @@
                   <p class="small text-muted mb-1">
                     Mon - Fri: 9:00 AM - 6:00 PM
                   </p>
-                  <p class="small text-muted">Sat & Sun: 9:00 AM - 4:00 PM</p>
+
                 </div>
               </div>
             </div>
@@ -696,7 +696,8 @@
               </p>
             </div>
             <div class="card-body p-4">
-              <form  id="contactFormM" >
+              <form id="contactFormM" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0919ffe5-680e-46d6-b7ca-ed9ed8a10822" />
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <label for="name" class="form-label">Full Name *</label>
@@ -707,7 +708,7 @@
                     <input type="email" class="form-control" name="email" id="email" required
                       placeholder="john@example.com" />
                   </div>
-                  <input type="hidden" name="access_key" id="access_key" value="86238df4-c217-49f2-a7d1-f170a729cf6e" />
+                  
 
                   <div class="col-sm-6">
                     <label for="company" class="form-label">Company/Organization</label>
@@ -724,9 +725,8 @@
                       placeholder="Tell us about your project and requirements..."></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-accent-custom btn-lg w-100">
-                      <i class="bi bi-send me-2"></i> Send Message
-                    </button>
+                    <button class="form-submit" type="submit">Send Message</button>
+                    
                   </div>
                 </div>
               </form>
