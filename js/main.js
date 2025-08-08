@@ -13,6 +13,31 @@
       });
     });
 
+    document.getElementById("textForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop form from submitting normally
+    
+    let formData = new FormData(this);
+
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("✅ Your message has been sent successfully!");
+            document.getElementById("textForm").reset();
+        } else {
+            alert("❌ Error sending message. Please try again.");
+            console.error(data);
+        }
+    })
+    .catch(error => {
+        alert("⚠️ Something went wrong. Please try again later.");
+        console.error(error);
+    });
+});
+
    
 
     // Add navbar background on scroll
